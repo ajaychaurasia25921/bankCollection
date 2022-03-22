@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "de9649f8-1c26-45f0-a21c-3bb5a4efc794",
+		"name": "bank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/member/onboard",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"personalDetail\": {\r\n        \"firstName\": \"Ajay\",\r\n        \"lastName\": \"Chaurasia\",\r\n        \"dateOfBirth\": \"1995-12-20\",\r\n        \"gender\": \"Male\",\r\n        \"nationality\": \"Indian\",\r\n        \"category\": \"General\",\r\n        \"fatherOrHusbandName\": \"RB Chaurasia\",\r\n        \"contactNumber\": \"9871617066\",\r\n        \"email\": \"info2@casrak9.com\",\r\n        \"aadharNumber\": \"754311475929\",\r\n        \"staffType\": \"IES\",\r\n        \"pan\": \"BFWPC0200C\",\r\n        \"qualification\": \"B.tech\"\r\n    },\r\n    \"memberAddress\": [\r\n        {\r\n        \"address\": \"ghaziabad\",\r\n        \"postOrCity\": \"ghaziabad\",\r\n        \"district\": \"ghaziabad\",\r\n        \"state\": \"Uttar Pradesh\",\r\n        \"country\": \"India\",\r\n        \"pinCode\": \"201013\",\r\n        \"contact\": \"9871617066\",\r\n        \"type\": \"Permanent\"\r\n        },\r\n        {\r\n        \"address\": \"ghaziabad\",\r\n        \"postOrCity\": \"ghaziabad\",\r\n        \"district\": \"ghaziabad\",\r\n        \"state\": \"Uttar Pradesh\",\r\n        \"country\": \"India\",\r\n        \"pinCode\": \"201013\",\r\n        \"contact\": \"9871617066\",\r\n        \"type\": \"Mailing\"\r\n        }\r\n    ],\r\n    \"officialDetail\": {\r\n        \"post\": \"IES\",\r\n        \"section\": \"A\",\r\n        \"personalNumber\": \"emp_0011\",\r\n        \"ticketNumber\": \"tck_9900\",\r\n        \"grossSalary\": \"25000\",\r\n        \"appointmentDate\": \"2022-01-20\",\r\n        \"introducer\": [\r\n                {\r\n                    \"name\": \"Abc\",\r\n                    \"personalNumber\": \"emp0001\",\r\n                    \"ticketNumber\": \"tck_996644\",\r\n                    \"section\": \"B\",\r\n                    \"post\": \"IES\"\r\n                },\r\n                {\r\n                    \"name\": \"Abcd\",\r\n                    \"personalNumber\": \"emp0001\",\r\n                    \"ticketNumber\": \"tck_996644\",\r\n                    \"section\": \"C\",\r\n                    \"post\": \"IES\"\r\n                }\r\n            ]\r\n        },\r\n        \"nominationDetail\": [\r\n            {\r\n                \"name\": \"father\",\r\n                \"address\": \"ghaziabad\",\r\n                \"relation\": \"father\"\r\n            },\r\n            {\r\n                \"name\": \"mother\",\r\n                \"address\": \"ghaziabad\",\r\n                \"relation\": \"mother\"\r\n            }\r\n        ],\r\n        \"openBalance\": 100.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/member/onboard",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member",
+						"onboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/member/onboard/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "member_photo",
+							"type": "file",
+							"src": "/C:/Users/ajay.chaurasia/Pictures/2.PNG"
+						},
+						{
+							"key": "member_signature",
+							"type": "file",
+							"src": "/C:/Users/ajay.chaurasia/Pictures/9eec3cd5c2a2064be3005409dca25f01.jpg"
+						},
+						{
+							"key": "member_id_card",
+							"type": "file",
+							"src": "/C:/Users/ajay.chaurasia/Pictures/1385324.jpg"
+						},
+						{
+							"key": "member_address_proof",
+							"type": "file",
+							"src": "/C:/Users/ajay.chaurasia/Pictures/1.PNG"
+						},
+						{
+							"key": "member_service_proof",
+							"type": "file",
+							"src": "/C:/Users/ajay.chaurasia/Pictures/build.PNG"
+						},
+						{
+							"key": "aadhar_card",
+							"type": "file",
+							"src": "/C:/Users/ajay.chaurasia/Pictures/9eec3cd5c2a2064be3005409dca25f01.jpg"
+						},
+						{
+							"key": "pan_card",
+							"type": "file",
+							"src": "/C:/Users/ajay.chaurasia/Pictures/collection.PNG"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/member/onboard/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member",
+						"onboard",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/member/1/kyc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/member/1/kyc",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member",
+						"1",
+						"kyc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FistName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/member/onboard/member/Ajay",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member",
+						"onboard",
+						"member",
+						"Ajay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ledger",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountId\": \"sm_01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ledger/filter",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ledger",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
